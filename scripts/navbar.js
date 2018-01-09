@@ -3,14 +3,12 @@ $(window).scroll(function () {
     if ($(window).scrollTop() >= 50) {
         navbar.classList.remove('navbar-black');
         navbar.classList.add('navbar-white');
-        document.getElementById("navlogo").src = "images/Logo.svg";
-        document.getElementById("navbar-toggler-icon").style.backgroundImage="url('images/nav-toggler-icon-black.svg')"; 
+        document.getElementById("myBtn").style.display = "block";
     }
     else {
         navbar.classList.remove('navbar-white');
         navbar.classList.add('navbar-black');
-        document.getElementById("navlogo").src="images/LogoI.svg";
-        document.getElementById("navbar-toggler-icon").style.backgroundImage="url('images/nav-toggler-icon-white.svg')"; 
+        document.getElementById("myBtn").style.display = "none";
     }
 });
 
@@ -28,5 +26,7 @@ $('#navbarbutton').on('click', function() {
             navbar.classList.add('navbar-tparent');
         },250);
     }
-})
-
+});
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
