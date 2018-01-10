@@ -72,9 +72,9 @@ a, a:hover{
 .jumbotron {
     min-height: 100vh;
     background-color: #333;
-    background-image: url("../images/jumbotron2.jpg");
+    background-image: url("../images/jumbotron.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: bottom right;
     color: white;
 }
@@ -178,9 +178,6 @@ a, a:hover{
     height: 80px;
 }
 
-.important-info {
-    text-align: center;
-}
 
 #mc_embed_signup_scroll {
     font-family: Raleway;
@@ -199,7 +196,9 @@ input.button {
 input.button:hover {
     background-color: #fdd835 !important;
 }
-
+.important-info{
+    text-align: center;
+}
 .servicehr {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -322,6 +321,7 @@ input.button:hover {
     max-height: 600px;
     max-width: 600px;
     padding-bottom: 1.5rem;
+    margin-top: -40px;
 }
 .calendar-container{
     max-height: 700px;
@@ -337,4 +337,14 @@ input.button:hover {
     .hidden-md-up{
         display: block;
     }
+}@media screen and (max-width: 768px) {
+    .col-sm-0{
+        display: none;
+    }
+}
+#facebook{
+    max-height: 50px;
+}
+.jumbotext h1 {
+    text-shadow: 2px 2px 5px #000;
 }
