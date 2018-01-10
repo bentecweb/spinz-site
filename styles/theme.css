@@ -74,7 +74,7 @@ a, a:hover{
     background-color: #333;
     background-image: url("../images/jumbotron2.jpg");
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-position: bottom right;
     color: white;
 }
@@ -297,7 +297,7 @@ input.button:hover {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    right: 20px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
@@ -305,11 +305,11 @@ input.button:hover {
     color: #333; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 7px 18px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 50%; /* Rounded corners */
     font-weight: 700;
     font-size: 40px;
     line-height: 1em;
-    box-shadow: 3px 3px 9px -1px #000;
+    box-shadow: 1px 1px 10px #333;
 }
 
 #myBtn:hover {
@@ -322,4 +322,19 @@ input.button:hover {
     max-height: 600px;
     max-width: 600px;
     padding-bottom: 1.5rem;
+}
+.calendar-container{
+    max-height: 700px;
+    max-width: 700px;
+}
+.hidden-md-up{
+    display: none;
+}
+@media screen and (max-width: 575px) {
+    .hidden-sm-down{
+        display: none;
+    }
+    .hidden-md-up{
+        display: block;
+    }
 }
