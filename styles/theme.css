@@ -195,7 +195,8 @@ input.button {
 }
 
 input.button:hover {
-    background-color: #fdd835 !important;
+    background-color: #fff !important;
+    color: #333 !important;
 }
 .important-info{
     text-align: center;
@@ -243,7 +244,7 @@ input.button:hover {
     font-family: Raleway;
 }
 .button:hover {
-    background-color: #fdd835;
+    background-color: #fff;
     color: #333;
 }
 .p-links {
