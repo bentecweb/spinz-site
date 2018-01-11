@@ -303,6 +303,10 @@ input.button:hover {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: #fdd835; /* Set a background color */
+    background-image: url(../images/UpArrow.svg);
+    background-size: 80% 80%;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 7px 18px; /* Some padding */
@@ -311,10 +315,13 @@ input.button:hover {
     font-size: 40px;
     line-height: 1em;
     box-shadow: 1px 1px 10px #333;
+    height: 60px;
+    width: 60px;
 }
 
 #myBtn:hover {
     background-color: #333; /* Add a dark-grey background on hover */
+    background-image: url(../images/UpArrow-white.svg);
     color: #fdd835;
 }
 .iframe-container{
